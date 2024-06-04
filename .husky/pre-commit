@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# validate branch name before commit
+npx validate-branch-name 
+
+#  lint staged file(s) file before commit
+npx lint-staged
